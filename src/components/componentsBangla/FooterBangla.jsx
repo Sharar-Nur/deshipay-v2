@@ -79,6 +79,7 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     // justifyContent: "space-between",
     justifyContent: "flex-end",
+
   },
   copyright: {
     fontSize: "0.9rem !important",

@@ -29,7 +29,7 @@ const useStyle = makeStyles((theme) => ({
     backgroundPosition: "bottom right",
     marginTop: 30,
     [theme.breakpoints.down("sm")]: {
-      marginTop: 0,
+      marginTop: 60,
       borderRadius: "10px 10px 100px 10px",
     },
   },

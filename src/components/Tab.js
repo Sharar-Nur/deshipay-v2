@@ -30,6 +30,7 @@ const Tab = ({ activeTab, setActiveTab }) => {
                     <option className="text-sm text-gray-600" value="ReferBonus">Refer Bonus </option>
                     <option className="text-sm text-gray-600" value="GetPoints">Get Points </option>
                 </select>
+
             </div>
 
             {/* Desktop view */}

@@ -21,7 +21,7 @@ const Offers = () => {
                 {activeTab === "AllOffers" &&
                     <div className="grid grid-cols-1 gap-4 px-12 lg:grid-cols-2 lg:gap-x-[30px] lg:gap-y-10">
                         <div className="flex justify-center lg:justify-end">
-                            <Link to="/offers/shareTripOne" className="flex flex-col p-5 items-center bg-white rounded-lg box-shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                            <Link to="/offers/shareTrip" className="flex flex-col p-5 items-center bg-white rounded-lg box-shadow md:flex-row md:max-w-xl hover:bg-gray-100">
                                 <img className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={instantCashback} alt="" />
                                 <div className="flex flex-col justify-between p-4 leading-normal">
                                     <h5 className="mb-2 text-2xl font-medium text-title text-width">10% Instant Cashback at ShareTrip</h5>

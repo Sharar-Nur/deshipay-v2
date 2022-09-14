@@ -79,7 +79,7 @@ function App() {
             <>
               <Route path="/" exact element={<Home />} />
               <Route path="/offers" element={<Offers />} />
-              <Route path="/offers/shareTripOne" element={<ShareTrip />} />
+              <Route path="/offers/shareTrip" element={<ShareTrip />} />
               <Route path="/offers/arfin" element={<Arfin />} />
               <Route path="/offers/nagad" element={<Nagad />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

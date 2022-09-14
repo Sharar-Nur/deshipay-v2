@@ -25,6 +25,7 @@ const useStyle = makeStyles((theme) => ({
   subtitle: {
     paddingTop: 20,
     display: "block",
+
   },
 }));
 
@@ -41,7 +42,7 @@ const HeaderOthers = ({ title, category }) => {
         ) : (
           <Typography variant="h3" className="text-center">{title}</Typography>
         )}
-        <Typography variant="subtile1" className={classes.subtitle}>
+        <Typography variant="subtile1 text-center" className={classes.subtitle}>
           <Link to="/">Home</Link> /{" "}
           {category === "Offers" ? <Link to="/offers">Offers / </Link> : null}
           <span className={classes.brand_color}>{title}</span>

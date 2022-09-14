@@ -41,11 +41,7 @@ const useStyle = makeStyles((theme) => ({
 const Banner = () => {
   const classes = useStyle();
 
-
-
-
   return (
-
     <div>
       <div className={classes.banner}>
 

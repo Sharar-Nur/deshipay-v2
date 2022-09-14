@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
 
 
     return (
-        <div className="flex justify-end ml-5">
+        <div className="flex justify-end items-center ml-5">
             <GlobeIcon />
             <select defaultValue={language} onChange={(e) => languageSwitchHandler(e.target.value)} id="languageSelector" className="text-base">
                 <option value="EN">EN</option>
@@ -26,7 +26,7 @@ const LanguageSwitcher = () => {
                                 background-color: transparent; 
                                 font-family: 'Montserrat', sans-serif;
                             }
-                        `}</style>
+            `}</style>
         </div>
     );
 };

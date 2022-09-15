@@ -6,12 +6,14 @@ import ImageMap from "image-map";
 const LanguageSwitcher = () => {
     const [language, setLanguage] = useContext(LanguageSelector);
 
+    useEffect(() => {
+        ImageMap('img[useMap]');
+    }, [language])
+
     const languageSwitchHandler = (lang) => {
         window.localStorage.setItem("language", lang);
         setLanguage(lang);
-        ImageMap('img[useMap]');
     }
-
 
     return (
         <div className="flex justify-end items-center ml-5">
@@ -24,7 +26,8 @@ const LanguageSwitcher = () => {
                             #languageSelector {
                                 border: none !important;
                                 background-color: transparent; 
-                                font-family: 'Montserrat', sans-serif;
+                                font-family: 'Montserrat', sans-serif;     
+                                outline:none !important;                                                 
                             }
             `}</style>
         </div>

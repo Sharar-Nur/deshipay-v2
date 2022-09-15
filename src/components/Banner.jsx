@@ -30,6 +30,9 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       marginBlock: "30px",
     },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 25,
+    },
   },
   header_subtitle: {
     [theme.breakpoints.down("sm")]: {
@@ -45,7 +48,7 @@ const Banner = () => {
     <div>
       <div className={classes.banner}>
 
-        <img src={banner_nagad} useMap="#image-map" alt="Nagad to Deshi" className="w-full" id="home-banner-img"></img>
+        <img src={banner_nagad} useMap="#image-map" alt="Nagad to Deshi" className="w-full " id="home-banner-img"></img>
 
         <map id="image-map" name="image-map">
           <area target="_blank" alt="Deshi" title="Deshi" href="https://play.google.com/store/apps/details?id=com.deshi.personal" coords="179,68,33,27" shape="rect" />

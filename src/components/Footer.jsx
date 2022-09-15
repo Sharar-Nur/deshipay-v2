@@ -19,6 +19,7 @@ const useStyle = makeStyles((theme) => ({
     marginTop: 140,
     paddingTop: 40,
     background: "#FCFCFC",
+    // paddingRight: "40px",
     [theme.breakpoints.down("sm")]: {
       marginTop: 30,
     },
@@ -48,25 +49,28 @@ const useStyle = makeStyles((theme) => ({
   footer_bottom: {
     display: "flex",
     borderTop: "1px solid #EEE",
-    height: 70,
+    // border: "1px solid red",
+    paddingBlock: "19px",
+    // height: 70,
     justifyContent: "center",
     alignItems: "center",
     "& div": {
       [theme.breakpoints.down("sm")]: {
-        padding: "10px 0px",
+        padding: "10px 10px",
       },
     },
     [theme.breakpoints.down("sm")]: {
-      height: 130,
-
+      // height: 190,
       flexDirection: "column-reverse",
-      padding: "35px 10px",
+      paddingBlock: "10px",
     },
+
   },
   menu_item: {
     color: "#666 !important",
     padding: "0px 20px !important",
     textTransform: "capitalize !important  ",
+    // border: "1px solid black !important",
 
     "&:hover": {
       color: "#00AA61 !important",
@@ -77,12 +81,12 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     // justifyContent: "space-between",
     justifyContent: "flex-end",
+    // border: "1px solid blue",
   },
   copyright: {
     fontSize: "0.9rem !important",
     color: "#666 !important",
-    [theme.breakpoints.down("sm")]: {
-    },
+    // border: "3px solid green",
   },
 }));
 function Footer() {
@@ -90,7 +94,7 @@ function Footer() {
   return (
     <div className={classes.root}>
       <Container maxWidth="lg" id="contact">
-        <Grid container spacing={3}>
+        <Grid container spacing={3} className="pr-12">
           <Grid item md={5}>
             <img src={logo} alt="" style={{ marginBottom: 20 }} />
             <Typography variant="body2" className={classes.content}>
@@ -175,14 +179,16 @@ function Footer() {
             </div>
           </Grid>
         </Grid>
-        <div
-          className={classes.footer_bottom}>
+
+
+        <div className={classes.footer_bottom}>
           <div>
             <Typography variant="body1" className={classes.copyright}>
               &copy; Copyright 2022. All Rights Reserved by Deshi a concern of
               <strong> Green & Red Technologies Ltd.</strong>
             </Typography>
           </div>
+
           <div className={classes.bottom_menu}>
             <Button variant="text" className={classes.menu_item}>
               <Link to="/privacy-policy">
@@ -201,6 +207,40 @@ function Footer() {
             </Button>
           </div>
         </div>
+
+
+
+
+        {/* <div className=" max-w-fit sm:flex sm:flex-row-reverse sm:items-center ">
+
+            <div className="flex justify-center sm:flex sm:justify-end">
+              <Button variant="text" className={classes.menu_item}>
+                <Link to="/privacy-policy">
+                  <Typography variant="subtitle1">Privacy Policy</Typography>
+                </Link>
+              </Button>
+              <Button variant="text" className={classes.menu_item}>
+                <Link to="/terms-condition">
+                  <Typography variant="subtitle1">Terms & Condition</Typography>
+                </Link>
+              </Button>
+              <Button variant="text" className={classes.menu_item}>
+                <Link to="/faq">
+                  <Typography variant="subtitle1">FAQ</Typography>
+                </Link>
+              </Button>
+            </div>
+
+            <div className="flex justify-center sm:flex sm:justify-start">
+              <Typography variant="body1" className={classes.copyright}>
+                &copy; Copyright 2022. All Rights Reserved by Deshi a concern of
+                <strong> Green & Red Technologies Ltd.</strong>
+              </Typography>
+            </div>
+
+          </div> */}
+
+
       </Container>
     </div>
   );

@@ -3,6 +3,9 @@ import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
 
 const useStyle = makeStyles((theme) => ({
+  root: {
+    margin: "40px 0px",
+  },
   title: {
     fontSize: "1.5rem !important",
     fontWeight: "500 !important",
@@ -22,7 +25,7 @@ const BioMetric = () => {
   const classes = useStyle();
 
   return (
-    <div>
+    <div className={classes.root}>
       <Typography className={classes.title}>
         Biometric Authentication
       </Typography>

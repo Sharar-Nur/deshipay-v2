@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 const useStyle = makeStyles((theme) => ({
   root: {
-    margin: "60px 0px",
+    margin: "40px 0px",
   },
   title: {
     fontSize: "1.5rem !important",
@@ -42,7 +42,7 @@ const MerchantTC = () => {
   const classes = useStyle();
 
   return (
-    <div>
+    <div className={classes.root}>
       <Typography className={classes.title}>
         Account Holder Rules (Merchant account)
       </Typography>

@@ -34,26 +34,27 @@ const Tab = ({ activeTab, setActiveTab }) => {
             </div>
 
             {/* Desktop view */}
+
             <div className="hidden sm:block bg-white">
                 <div className="xl:w-full xl:mx-0 h-12">
                     <ul className="flex justify-center px-7 selected-tab list-none">
-                        <li onClick={() => setActiveTab("AllOffers")} className={activeTab === "AllOffers" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : "text-title py-3 mr-10 font-medium"}>
+                        <li onClick={() => tabChangeHandler("AllOffers")} className={activeTab === "AllOffers" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : "text-title py-3 mr-10 font-medium"}>
                             <span className="mb-3 cursor-pointer">All Offers</span>
                             {activeTab === "AllOffers" && <div className="w-full h-0.5 bg-brand " />}
                         </li>
-                        <li onClick={() => setActiveTab("Cashback")} className={activeTab === "Cashback" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : " text-title py-3 mr-10 font-medium"}>
+                        <li onClick={() => tabChangeHandler("Cashback")} className={activeTab === "Cashback" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : " text-title py-3 mr-10 font-medium"}>
                             <span className="mb-3 cursor-pointer">Cashback</span>
                             {activeTab === "Cashback" && <div className="w-full h-0.5 bg-brand" />}
                         </li>
-                        <li onClick={() => setActiveTab("Discounts")} className={activeTab === "Discounts" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : "text-title py-3 mr-10 font-medium"}>
+                        <li onClick={() => tabChangeHandler("Discounts")} className={activeTab === "Discounts" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : "text-title py-3 mr-10 font-medium"}>
                             <span className="mb-3 cursor-pointer">Discounts</span>
                             {activeTab === "Discounts" && <div className="w-full h-0.5 bg-brand" />}
                         </li>
-                        <li onClick={() => setActiveTab("ReferBonus")} className={activeTab === "ReferBonus" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : "text-title py-3 mr-10 font-medium"}>
+                        <li onClick={() => tabChangeHandler("ReferBonus")} className={activeTab === "ReferBonus" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3 mr-10" : "text-title py-3 mr-10 font-medium"}>
                             <span className="mb-3 cursor-pointer">Refer Bonus</span>
                             {activeTab === "ReferBonus" && <div className="w-full h-0.5 bg-brand" />}
                         </li>
-                        <li onClick={() => setActiveTab("GetPoints")} className={activeTab === "GetPoints" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3" : "text-title py-3 font-medium"}>
+                        <li onClick={() => tabChangeHandler("GetPoints")} className={activeTab === "GetPoints" ? "text-xl font-medium text-brand flex flex-col justify-between pt-3" : "text-title py-3 font-medium"}>
                             <span className="mb-3 cursor-pointer">Get Points</span>
                             {activeTab === "GetPoints" && <div className="w-full h-0.5 bg-brand" />}
                         </li>

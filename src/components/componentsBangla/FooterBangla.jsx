@@ -49,19 +49,19 @@ const useStyle = makeStyles((theme) => ({
   footer_bottom: {
     display: "flex",
     borderTop: "1px solid #EEE",
-    height: 70,
+    paddingBlock: "19px",
     justifyContent: "center",
     alignItems: "center",
     "& div": {
       [theme.breakpoints.down("sm")]: {
-        padding: "10px 0px",
+        padding: "10px 10px",
       },
     },
     [theme.breakpoints.down("sm")]: {
-      height: 130,
+      // height: 130,
 
       flexDirection: "column-reverse",
-      padding: "35px 10px",
+      paddingBlock: "10px",
     },
   },
   menu_item: {
@@ -82,6 +82,7 @@ const useStyle = makeStyles((theme) => ({
 
   },
   copyright: {
+
     fontSize: "0.9rem !important",
     color: "#666 !important",
     [theme.breakpoints.down("sm")]: {
@@ -89,19 +90,19 @@ const useStyle = makeStyles((theme) => ({
     },
   },
 }));
-function FooterBangla({ language }) {
+function FooterBangla() {
   const classes = useStyle();
   return (
     <div className={classes.root}>
       <Container maxWidth="lg" id="contact">
-        <Grid container spacing={3}>
+        <Grid container spacing={3} className="pr-12">
           <Grid item md={5}>
             <img src={logo} alt="" style={{ marginBottom: 20 }} />
             <Typography variant="body2" className={classes.content}>
-              দেশী আবিষ্কার করুন, এটি আপনাকে ডিজিটাল ফাইন্যান্স ইকোসিস্টেমে সংযুক্ত করবে। এখন থেকে সকল ফাইন্যান্স আপনার মোবাইল অ্যাপেই থাকবে। দেশী  আপনার অর্থনৈতিক জীবনকে সমৃদ্ধশালী করবে। এটা সুবিন্যস্ত অভিজ্ঞতার মাধ্যমে ভোক্তাদের অর্থপ্রদান, ঋণদান, ব্যাংকিং, ব্যক্তিগত/ব্যবসায়িক অর্থায়নে সহায়তা করে। আজই আপনার দেশি অ্যাকাউন্ট খুলুন।
+              দেশি আবিষ্কার করুন, এটি আপনাকে ডিজিটাল ফাইন্যান্স ইকোসিস্টেমে সংযুক্ত করবে। এখন থেকে সকল ফাইন্যান্স আপনার মোবাইল অ্যাপেই থাকবে। দেশি  আপনার অর্থনৈতিক জীবনকে সমৃদ্ধশালী করবে। এটা সুবিন্যস্ত অভিজ্ঞতার মাধ্যমে ভোক্তাদের অর্থপ্রদান, ঋণদান, ব্যাংকিং, ব্যক্তিগত/ব্যবসায়িক অর্থায়নে সহায়তা করে। আজই আপনার দেশি অ্যাকাউন্ট খুলুন।
               <br />
               <br />
-              আপনার দেশীতে একটি অ্যাকাউন্ট থাকা মানেই- আপনি কিছু চমকপ্রদ জিনিস করতে পারবেন- দেশী এর মাধ্যমে টাকা পেতে এবং টাকা পেমেন্ট করতে আপনার ব্যাংক অ্যাকাউন্টটি লিংক করুন। রিয়েল-টাইম নটিফিকেশনের মাধ্যমে তাৎক্ষনিক আপডেট পেয়ে যাবেন। স্বয়ংক্রিয়ভাবে ক্যাশব্যাক পাওয়ার মাধ্যমে মুদি সপ, ফ্যাশন, ভ্রমণ এবং আরও অনেক কিছুতে দেশী দিয়ে পেমেন্টের মাধ্যমে অর্থ সাশ্রয় করুন।
+              আপনার দেশিতে একটি অ্যাকাউন্ট থাকা মানেই- আপনি কিছু চমকপ্রদ জিনিস করতে পারবেন- দেশি এর মাধ্যমে টাকা পেতে এবং টাকা পেমেন্ট করতে আপনার ব্যাংক অ্যাকাউন্টটি লিংক করুন। রিয়েল-টাইম নটিফিকেশনের মাধ্যমে তাৎক্ষনিক আপডেট পেয়ে যাবেন। স্বয়ংক্রিয়ভাবে ক্যাশব্যাক পাওয়ার মাধ্যমে মুদি সপ, ফ্যাশন, ভ্রমণ এবং আরও অনেক কিছুতে দেশি দিয়ে পেমেন্টের মাধ্যমে অর্থ সাশ্রয় করুন।
             </Typography>
           </Grid>
           <Grid item md={5}>
@@ -184,7 +185,7 @@ function FooterBangla({ language }) {
         >
           <div>
             <Typography variant="body1" className={classes.copyright}>
-              &copy; কপিরাইট ২০২২। দেশী একটি
+              &copy; কপিরাইট ২০২২। দেশি একটি
               <strong> গ্রীন এন্ড রেড টেকনোলজিস লিমিটেড</strong> প্রতিষ্ঠান, সর্বস্বত্ব সংরক্ষিত।
             </Typography>
           </div>
